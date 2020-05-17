@@ -68,11 +68,10 @@ fi
 echo ""
 
 
-echo "Now installing signify. Beware: the signify package in OpenBSD is very old and may be missing security updates."
+echo "Now installing signify. Beware: the signify package from OpenBSD on Debian and Mint and Ubuntu is very old and may be missing security updates."
 sudo apt install -y signify-openbsd
 if [ $? = 1 ]; then
-    echo "The installation of signify, but that's optional at this point."
-    exit 1
+    echo "The installation of signify didn't go as planned, but that's optional at this point."
 fi
 
 echo ""
